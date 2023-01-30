@@ -79,7 +79,8 @@ class Corona_base(Sprite):
         self.screen_rect = game.screen.get_rect()
         self.rect.centerx = randint(0,(game_constants.WIDTH - 100))
         self.rect.top = -1*randint(0,(game_constants.HEIGTH)) 
-        self.vel = 3
+
+        self.vel = randint(3,7)
 
     def update(self,delta_time, actions):
         

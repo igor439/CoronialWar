@@ -74,8 +74,8 @@ class Play_stage_one(State):
         for virus in self.corona_base_group.sprites():
             if self.player.nav_rect.colliderect(virus.rect):
                 self.game.playing = False
+            virus.update(delta_time, actions)
 
-        self.corona_base_group.update(delta_time, actions)
 
         if self.game.playing == False:
             self.game.screen.fill(game_constants.BLACK)

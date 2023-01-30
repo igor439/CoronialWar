@@ -11,6 +11,7 @@ import time
 class Game():
     def __init__(self):  
         
+
         pygame.init()
         self.screen = pygame.display.set_mode((game_constants.WIDTH, game_constants.HEIGTH))
         pygame.display.set_caption(game_constants.TITLE)
@@ -213,9 +214,11 @@ if __name__ == '__main__':
         if game.playing:
             game.game_loop()
         else:
-            while len(game.state_stack) > 1:
+            while len(game.state_stack) >= 1:
                 game.state_stack.pop()
             game.playing = True
+            game.load_states()
+        
         
     
 
