@@ -92,6 +92,7 @@ class Play_stage_one(State):
         self.player.render(surface)
         self.bullet_group.draw(surface)
         self.corona_base_group.draw(surface)
+        pygame.display.update()
 
        
 

@@ -94,6 +94,7 @@ class Play_stage_two(State):
         self.bullet_group.draw(surface)
         self.omicron_bullet_group.draw(surface)
         self.corona_base_group.draw(surface)
+        pygame.display.update()
         
     
     

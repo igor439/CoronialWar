@@ -1,13 +1,13 @@
 import pygame
 import pytest
 
-from main import Game
+from main import game
 from states.menu_state import Menu
 from states.play_state_one import Play_stage_one
 from states.play_state_two import Play_stage_two
   
 
-game = Game()
+game = game()
 menu = Menu(game)
 stage_one = Play_stage_one(game)
 stage_two = Play_stage_two(game)
